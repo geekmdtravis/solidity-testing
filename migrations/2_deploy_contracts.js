@@ -1,9 +1,9 @@
 const SimpleStorage = artifacts.require("SimpleStorage");
-const TutorialToken = artifacts.require("TutorialToken");
+const Earthlings = artifacts.require("Earthlings");
 const ComplexStorage = artifacts.require("ComplexStorage");
 
-module.exports = function(deployer) {
+module.exports = function (deployer) {
   deployer.deploy(SimpleStorage);
-  deployer.deploy(TutorialToken);
+  deployer.deploy(Earthlings);
   deployer.deploy(ComplexStorage);
 };
