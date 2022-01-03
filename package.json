@@ -1,0 +1,32 @@
+{
+  "name": "solidity-tutorial",
+  "version": "0.1.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "cd app && npm run start",
+    "build": "cd app && npm run build",
+    "test": "cd app && npm test",
+    "compile": "truffle compile",
+    "migrate:ganache": "truffle migrate --reset --compile-all --network ganache",
+    "console:ganache": "truffle console --network ganache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/truffle-box/drizzle-box.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/truffle-box/drizzle-box/issues"
+  },
+  "homepage": "https://github.com/truffle-box/drizzle-box#readme",
+  "dependencies": {
+    "@metamask/detect-provider": "^1.2.0",
+    "@openzeppelin/contracts": "^2.4.0"
+  }
+}
