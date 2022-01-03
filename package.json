@@ -1,5 +1,5 @@
 {
-  "name": "solidity-tutorial",
+  "name": "solidity-testing",
   "version": "0.1.0",
   "description": "",
   "main": "truffle-config.js",
@@ -26,7 +26,6 @@
   },
   "homepage": "https://github.com/truffle-box/drizzle-box#readme",
   "dependencies": {
-    "@metamask/detect-provider": "^1.2.0",
     "@openzeppelin/contracts": "^2.4.0"
   }
 }
