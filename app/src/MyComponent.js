@@ -8,11 +8,11 @@ export default ({ drizzle, drizzleState }) => {
   return (
     <div className="App">
       <div>
-        <h1>React DApp</h1>
+        <h1>Earthlings Token (ELGS)</h1>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero quae
-          incidunt porro saepe aspernatur nulla ducimus! In, veniam id numquam
-          aperiam alias amet rem eum saepe vero. Incidunt, nihil porro.
+          Earthlings token is governance and utility token. Utility features
+          include voting for products to springboard off our launchpad, features
+          to fund in the electronic health record system, and research to fund.
         </p>
       </div>
 
@@ -25,24 +25,6 @@ export default ({ drizzle, drizzleState }) => {
           units="ether"
           precision={3}
         />
-      </div>
-
-      <div className="section">
-        <h2>SimpleStorage</h2>
-        <p>
-          This shows a simple ContractData component with no arguments, along
-          with a form to set its value.
-        </p>
-        <p>
-          <strong>Stored Value: </strong>
-          <ContractData
-            drizzle={drizzle}
-            drizzleState={drizzleState}
-            contract="SimpleStorage"
-            method="storedData"
-          />
-        </p>
-        <ContractForm drizzle={drizzle} contract="SimpleStorage" method="set" />
       </div>
 
       <div className="section">
@@ -86,42 +68,6 @@ export default ({ drizzle, drizzleState }) => {
           contract="Earthlings"
           method="transfer"
           labels={["To Address", "Amount to Send"]}
-        />
-      </div>
-
-      <div className="section">
-        <h2>ComplexStorage</h2>
-        <p>
-          Finally this contract shows data types with additional considerations.
-          Note in the code the strings below are converted from bytes to UTF-8
-          strings and the device data struct is iterated as a list.
-        </p>
-        <p>
-          <strong>String 1: </strong>
-          <ContractData
-            drizzle={drizzle}
-            drizzleState={drizzleState}
-            contract="ComplexStorage"
-            method="string1"
-            toUtf8
-          />
-        </p>
-        <p>
-          <strong>String 2: </strong>
-          <ContractData
-            drizzle={drizzle}
-            drizzleState={drizzleState}
-            contract="ComplexStorage"
-            method="string2"
-            toUtf8
-          />
-        </p>
-        <strong>Single Device Data: </strong>
-        <ContractData
-          drizzle={drizzle}
-          drizzleState={drizzleState}
-          contract="ComplexStorage"
-          method="singleDD"
         />
       </div>
     </div>
