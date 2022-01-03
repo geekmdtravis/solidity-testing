@@ -11,20 +11,18 @@ const App = () => {
   return (
     <DrizzleContext.Provider drizzle={drizzle}>
       <DrizzleContext.Consumer>
-        {drizzleContext => {
+        {(drizzleContext) => {
           const { drizzle, drizzleState, initialized } = drizzleContext;
 
           if (!initialized) {
-            return "Loading..."
+            return "Search for an Ethereum endpoint...";
           }
 
-          return (
-            <MyComponent drizzle={drizzle} drizzleState={drizzleState} />
-          )
+          return <MyComponent drizzle={drizzle} drizzleState={drizzleState} />;
         }}
       </DrizzleContext.Consumer>
     </DrizzleContext.Provider>
   );
-}
+};
 
 export default App;

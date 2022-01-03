@@ -1,6 +1,5 @@
 import React from "react";
 import { newContextComponents } from "@drizzle/react-components";
-import logo from "./logo.png";
 
 const { AccountData, ContractData, ContractForm } = newContextComponents;
 
@@ -9,10 +8,11 @@ export default ({ drizzle, drizzleState }) => {
   return (
     <div className="App">
       <div>
-        <img src={logo} alt="drizzle-logo" />
-        <h1>Drizzle Examples</h1>
+        <h1>React DApp</h1>
         <p>
-          Examples of how to get started with Drizzle in various situations.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero quae
+          incidunt porro saepe aspernatur nulla ducimus! In, veniam id numquam
+          aperiam alias amet rem eum saepe vero. Incidunt, nihil porro.
         </p>
       </div>
 
